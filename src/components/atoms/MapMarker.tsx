@@ -5,8 +5,9 @@ const MapMarker = (props: { coordinate: LatLng}) => {
     return (
         <Marker
             coordinate={props.coordinate}
+            image={require('../../assets/map-icons/cat-marker.png')}
         >
-            <Image source={require('../../assets/map-icons/cat-2.png')} />
+            {/* <Image source={require('../../assets/map-icons/cat-2.png')} /> */}
         </Marker>
     )
 }
