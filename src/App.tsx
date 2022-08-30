@@ -36,8 +36,8 @@ const App = () => {
 						component={Map}
 						options={{
 							headerShown: false,
-							tabBarIcon: () => (
-								<FontAwesomeIcon icon={ faCat } size={ 24 }/>
+							tabBarIcon: ({ color }) => (
+								<FontAwesomeIcon icon={ faCat } size={ 24 } color={ color }/>
 							),
 
 						}}
@@ -45,8 +45,8 @@ const App = () => {
 					<Tab.Screen
 						name="Profile"
 						options={{
-							tabBarIcon: () => (
-								<FontAwesomeIcon icon={ faUser } size={ 24 }/>
+							tabBarIcon: ({ color }) => (
+								<FontAwesomeIcon icon={ faUser } size={ 24 } color={ color }/>
 							),
 						}}
 						component={HelloWorld} />
